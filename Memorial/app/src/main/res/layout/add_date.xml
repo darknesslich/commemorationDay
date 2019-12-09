@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFAAB0">
+
+
+    <EditText
+        android:id="@+id/year_edit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:background="@android:drawable/alert_light_frame"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/month_edit"
+        android:layout_toStartOf="@+id/month_edit"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp" />
+
+    <EditText
+        android:id="@+id/month_edit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@android:drawable/alert_light_frame"
+        android:inputType="number"
+        android:layout_alignBaseline="@+id/year_edit"
+        android:layout_alignBottom="@+id/year_edit"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/day_edit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/alert_light_frame"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignBaseline="@+id/month_edit"
+        android:layout_alignBottom="@+id/month_edit"
+        android:layout_toRightOf="@+id/month_edit"
+        android:layout_toEndOf="@+id/month_edit"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="年"
+        android:textSize="18sp"
+        android:layout_above="@+id/month_edit"
+        android:layout_alignLeft="@+id/year_edit"
+        android:layout_alignStart="@+id/year_edit"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="月"
+        android:textSize="18sp"
+        android:layout_above="@+id/month_edit"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日"
+        android:textSize="18sp"
+        android:layout_above="@+id/day_edit"
+        android:layout_alignLeft="@+id/day_edit"
+        android:layout_alignStart="@+id/day_edit"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:text="纪念日"
+        android:textColorLink="@android:color/background_dark"
+        android:textSize="24sp"
+        android:layout_below="@+id/year_edit"
+        android:layout_alignRight="@+id/year_edit"
+        android:layout_alignEnd="@+id/year_edit" />
+
+    <EditText
+        android:id="@+id/date_name_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6"
+        android:layout_toRightOf="@+id/textView6"
+        android:background="@android:drawable/alert_light_frame"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginBottom="126dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        android:text="保存"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/save"
+        android:layout_toRightOf="@+id/textView4"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="返回"
+        android:textSize="24sp" />
+</RelativeLayout>
